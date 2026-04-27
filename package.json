@@ -1,0 +1,8 @@
+{
+  "name": "nimbalyst-onedark-pro",
+  "version": "1.0.0",
+  "description": "One Dark Pro theme for Nimbalyst.",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js"
+}

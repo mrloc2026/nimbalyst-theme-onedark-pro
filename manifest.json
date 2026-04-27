@@ -1,0 +1,216 @@
+{
+  "id": "com.nimbalyst.onedark-pro",
+  "name": "One Dark Pro",
+  "version": "1.0.0",
+  "description": "Atom's iconic One Dark theme, ported to Nimbalyst from Binaryify/OneDark-Pro.",
+  "author": "Nimbalyst Community",
+  "main": "dist/index.js",
+  "apiVersion": "1.0.0",
+  "permissions": {},
+  "contributions": {
+    "themes": [
+      {
+        "id": "onedark-pro",
+        "name": "One Dark Pro",
+        "isDark": true,
+        "colors": {
+          "bg": "#282c34",
+          "bg-secondary": "#21252b",
+          "bg-tertiary": "#2c313c",
+          "bg-hover": "#2c313a",
+          "bg-selected": "#323842",
+          "bg-active": "#3e4452",
+
+          "text": "#abb2bf",
+          "text-muted": "#9da5b4",
+          "text-faint": "#7f848e",
+          "text-disabled": "#5c6370",
+
+          "border": "#3e4452",
+          "border-focus": "#528bff",
+
+          "primary": "#528bff",
+          "primary-hover": "#61afef",
+
+          "link": "#61afef",
+          "link-hover": "#93c5fd",
+
+          "accent-subtle": "rgba(82, 139, 255, 0.12)",
+
+          "success": "#98c379",
+          "warning": "#d19a66",
+          "error": "#e06c75",
+          "info": "#61afef",
+          "purple": "#c678dd",
+
+          "code-bg": "#21252b",
+          "code-text": "#abb2bf",
+          "code-border": "#3e4452",
+          "code-gutter": "#282c34",
+
+          "table-border": "#3e4452",
+          "table-header": "#21252b",
+          "table-cell": "#282c34",
+          "table-stripe": "#2c313c",
+
+          "toolbar-bg": "#21252b",
+          "toolbar-border": "#3e4452",
+          "toolbar-hover": "#2c313a",
+          "toolbar-active": "rgba(82, 139, 255, 0.2)",
+
+          "highlight-bg": "rgba(229, 192, 123, 0.18)",
+          "highlight-border": "rgba(229, 192, 123, 0.4)",
+          "quote-text": "#9da5b4",
+          "quote-border": "#3e4452",
+
+          "scrollbar-thumb": "#4e5666",
+          "scrollbar-thumb-hover": "#747d91",
+          "scrollbar-track": "transparent",
+
+          "diff-add-bg": "rgba(16, 152, 104, 0.18)",
+          "diff-add-border": "rgba(16, 152, 104, 0.45)",
+          "diff-remove-bg": "rgba(154, 53, 61, 0.22)",
+          "diff-remove-border": "rgba(154, 53, 61, 0.5)",
+
+          "code-comment": "#7f848e",
+          "code-punctuation": "#abb2bf",
+          "code-property": "#e06c75",
+          "code-selector": "#98c379",
+          "code-operator": "#c678dd",
+          "code-attr": "#d19a66",
+          "code-variable": "#e5c07b",
+          "code-function": "#61afef",
+
+          "file-new": "#98c379",
+          "file-edited": "#61afef",
+          "file-deleted": "#e06c75",
+
+          "terminal-bg": "#282c34",
+          "terminal-fg": "#abb2bf",
+          "terminal-cursor": "#528bff",
+          "terminal-cursor-accent": "#282c34",
+          "terminal-selection": "rgba(171, 178, 191, 0.3)",
+
+          "terminal-ansi-black": "#3f4451",
+          "terminal-ansi-red": "#e05561",
+          "terminal-ansi-green": "#8cc265",
+          "terminal-ansi-yellow": "#d18f52",
+          "terminal-ansi-blue": "#4aa5f0",
+          "terminal-ansi-magenta": "#c162de",
+          "terminal-ansi-cyan": "#42b3c2",
+          "terminal-ansi-white": "#d7dae0",
+
+          "terminal-ansi-bright-black": "#4f5666",
+          "terminal-ansi-bright-red": "#ff616e",
+          "terminal-ansi-bright-green": "#a5e075",
+          "terminal-ansi-bright-yellow": "#f0a45d",
+          "terminal-ansi-bright-blue": "#4dc4ff",
+          "terminal-ansi-bright-magenta": "#de73ff",
+          "terminal-ansi-bright-cyan": "#4cd1e0",
+          "terminal-ansi-bright-white": "#e6e6e6"
+        }
+      },
+      {
+        "id": "onedark-pro-darker",
+        "name": "One Dark Pro Darker",
+        "isDark": true,
+        "colors": {
+          "bg": "#1b1f23",
+          "bg-secondary": "#16191d",
+          "bg-tertiary": "#23272e",
+          "bg-hover": "#22262b",
+          "bg-selected": "#2c313a",
+          "bg-active": "#323842",
+
+          "text": "#abb2bf",
+          "text-muted": "#9da5b4",
+          "text-faint": "#6b717d",
+          "text-disabled": "#4f5666",
+
+          "border": "#2c313a",
+          "border-focus": "#528bff",
+
+          "primary": "#528bff",
+          "primary-hover": "#61afef",
+
+          "link": "#61afef",
+          "link-hover": "#93c5fd",
+
+          "accent-subtle": "rgba(82, 139, 255, 0.12)",
+
+          "success": "#98c379",
+          "warning": "#d19a66",
+          "error": "#e06c75",
+          "info": "#61afef",
+          "purple": "#c678dd",
+
+          "code-bg": "#16191d",
+          "code-text": "#abb2bf",
+          "code-border": "#2c313a",
+          "code-gutter": "#1b1f23",
+
+          "table-border": "#2c313a",
+          "table-header": "#16191d",
+          "table-cell": "#1b1f23",
+          "table-stripe": "#23272e",
+
+          "toolbar-bg": "#16191d",
+          "toolbar-border": "#2c313a",
+          "toolbar-hover": "#22262b",
+          "toolbar-active": "rgba(82, 139, 255, 0.2)",
+
+          "highlight-bg": "rgba(229, 192, 123, 0.18)",
+          "highlight-border": "rgba(229, 192, 123, 0.4)",
+          "quote-text": "#9da5b4",
+          "quote-border": "#2c313a",
+
+          "scrollbar-thumb": "#3a3f4b",
+          "scrollbar-thumb-hover": "#5a637580",
+          "scrollbar-track": "transparent",
+
+          "diff-add-bg": "rgba(16, 152, 104, 0.18)",
+          "diff-add-border": "rgba(16, 152, 104, 0.45)",
+          "diff-remove-bg": "rgba(154, 53, 61, 0.22)",
+          "diff-remove-border": "rgba(154, 53, 61, 0.5)",
+
+          "code-comment": "#7f848e",
+          "code-punctuation": "#abb2bf",
+          "code-property": "#e06c75",
+          "code-selector": "#98c379",
+          "code-operator": "#c678dd",
+          "code-attr": "#d19a66",
+          "code-variable": "#e5c07b",
+          "code-function": "#61afef",
+
+          "file-new": "#98c379",
+          "file-edited": "#61afef",
+          "file-deleted": "#e06c75",
+
+          "terminal-bg": "#1b1f23",
+          "terminal-fg": "#abb2bf",
+          "terminal-cursor": "#528bff",
+          "terminal-cursor-accent": "#1b1f23",
+          "terminal-selection": "rgba(171, 178, 191, 0.3)",
+
+          "terminal-ansi-black": "#3f4451",
+          "terminal-ansi-red": "#e05561",
+          "terminal-ansi-green": "#8cc265",
+          "terminal-ansi-yellow": "#d18f52",
+          "terminal-ansi-blue": "#4aa5f0",
+          "terminal-ansi-magenta": "#c162de",
+          "terminal-ansi-cyan": "#42b3c2",
+          "terminal-ansi-white": "#d7dae0",
+
+          "terminal-ansi-bright-black": "#4f5666",
+          "terminal-ansi-bright-red": "#ff616e",
+          "terminal-ansi-bright-green": "#a5e075",
+          "terminal-ansi-bright-yellow": "#f0a45d",
+          "terminal-ansi-bright-blue": "#4dc4ff",
+          "terminal-ansi-bright-magenta": "#de73ff",
+          "terminal-ansi-bright-cyan": "#4cd1e0",
+          "terminal-ansi-bright-white": "#e6e6e6"
+        }
+      }
+    ]
+  }
+}
