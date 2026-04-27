@@ -1,0 +1,37 @@
+{
+  "id": "onedark-pro",
+  "name": "One Dark Pro",
+  "version": "1.0.0",
+  "author": "Binaryify (port by Nimbalyst Community)",
+  "description": "Atom's iconic One Dark theme, ported from Binaryify/OneDark-Pro",
+  "license": "MIT",
+  "isDark": true,
+  "colors": {
+    "bg": "#282c34",
+    "bg-secondary": "#21252b",
+    "bg-tertiary": "#2c313c",
+    "bg-hover": "rgba(255, 255, 255, 0.05)",
+    "bg-selected": "rgba(82, 139, 255, 0.18)",
+    "bg-active": "#3e4452",
+
+    "text": "#abb2bf",
+    "text-muted": "#9da5b4",
+    "text-faint": "#7f848e",
+    "text-disabled": "#5c6370",
+
+    "border": "#3e4452",
+    "border-focus": "#528bff",
+
+    "primary": "#528bff",
+    "primary-hover": "#61afef",
+
+    "link": "#61afef",
+    "link-hover": "#93c5fd",
+
+    "success": "#98c379",
+    "warning": "#d19a66",
+    "error": "#e06c75",
+    "info": "#61afef"
+  },
+  "tags": ["dark", "atom", "one-dark"]
+}

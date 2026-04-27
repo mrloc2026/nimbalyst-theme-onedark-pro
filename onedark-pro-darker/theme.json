@@ -1,0 +1,37 @@
+{
+  "id": "onedark-pro-darker",
+  "name": "One Dark Pro Darker",
+  "version": "1.0.0",
+  "author": "Binaryify (port by Nimbalyst Community)",
+  "description": "One Dark Pro with a darker background for higher contrast",
+  "license": "MIT",
+  "isDark": true,
+  "colors": {
+    "bg": "#1b1f23",
+    "bg-secondary": "#16191d",
+    "bg-tertiary": "#23272e",
+    "bg-hover": "rgba(255, 255, 255, 0.05)",
+    "bg-selected": "rgba(82, 139, 255, 0.18)",
+    "bg-active": "#323842",
+
+    "text": "#abb2bf",
+    "text-muted": "#9da5b4",
+    "text-faint": "#6b717d",
+    "text-disabled": "#4f5666",
+
+    "border": "#2c313a",
+    "border-focus": "#528bff",
+
+    "primary": "#528bff",
+    "primary-hover": "#61afef",
+
+    "link": "#61afef",
+    "link-hover": "#93c5fd",
+
+    "success": "#98c379",
+    "warning": "#d19a66",
+    "error": "#e06c75",
+    "info": "#61afef"
+  },
+  "tags": ["dark", "atom", "one-dark", "darker"]
+}

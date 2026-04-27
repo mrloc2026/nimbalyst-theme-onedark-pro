@@ -1,47 +1,70 @@
 # One Dark Pro for Nimbalyst
 
-Atom's iconic One Dark theme for Nimbalyst, ported from the
-[Binaryify/OneDark-Pro](https://github.com/Binaryify/OneDark-Pro) VS Code theme.
+Atom's iconic One Dark theme, ported from
+[Binaryify/OneDark-Pro](https://github.com/Binaryify/OneDark-Pro) for the
+Nimbalyst editor (v0.58.x).
 
-Ships two variants:
+Two variants:
 
 - **One Dark Pro** — the classic `#282c34` background
-- **One Dark Pro Darker** — `#1b1f23` background for higher contrast
+- **One Dark Pro Darker** — `#1b1f23` for higher contrast
 
-## Install in Nimbalyst
-
-This extension contains only a theme contribution, so there's no build step —
-the prebuilt `dist/index.js` is just an empty lifecycle stub.
-
-1. Enable **Settings > Advanced > Extension Dev Tools** in Nimbalyst.
-2. Ask Claude inside Nimbalyst:
-
-   > Install my extension from `~/sites/Nola/nimbalyst-onedark-pro`
-
-   Claude calls the `extension_install` tool to register it.
-3. Open the theme picker and select **One Dark Pro** or **One Dark Pro Darker**.
-
-While iterating on `manifest.json`, ask Claude to **reload** the extension and
-the new colors will apply live.
-
-## What's covered
-
-The manifest maps the One Dark Pro palette to every Nimbalyst theme token —
-backgrounds, text, borders, status colors, code blocks, syntax highlighting
-(`code-comment`, `code-property`, `code-function`…), diff add/remove, scrollbar,
-terminal foreground/background, cursor, and the full 16-color ANSI palette.
-
-Tokens you don't override are inherited from Nimbalyst's built-in dark theme,
-and a few are auto-derived (e.g. `terminal-bg` falls back to `bg-secondary`).
-
-## Files
+## Layout
 
 ```
 nimbalyst-onedark-pro/
-  manifest.json     # both theme variants live here
-  package.json      # metadata only
-  dist/index.js     # empty activate/deactivate stub
-  README.md
+├── onedark-pro/
+│   └── theme.json
+└── onedark-pro-darker/
+    └── theme.json
+```
+
+Each subfolder is a standalone Nimbalyst theme bundle. `theme.json` follows
+Nimbalyst's filesystem theme schema (id, name, version, isDark, colors, tags).
+
+## Install (manual)
+
+The Themes panel in Settings reads themes from
+`~/Library/Application Support/@nimbalyst/electron/themes/` (macOS).
+Until Nimbalyst ships an Install button, copy the bundles in directly:
+
+```bash
+git clone https://github.com/mrloc2026/nimbalyst-theme-onedark-pro.git
+cd nimbalyst-theme-onedark-pro
+
+# macOS
+DEST="$HOME/Library/Application Support/@nimbalyst/electron/themes"
+mkdir -p "$DEST"
+cp -R onedark-pro "$DEST/"
+cp -R onedark-pro-darker "$DEST/"
+```
+
+Then in Nimbalyst:
+
+1. Open **Settings → Themes**
+2. Click **Refresh** (top-right)
+3. **One Dark Pro** and **One Dark Pro Darker** appear under *Installed Themes*
+4. Click **Apply** on either
+
+## Why not an extension?
+
+Nimbalyst's older extension `contributions.themes` schema isn't wired up to the
+Themes panel in v0.58.x. Themes have to be filesystem bundles in the user
+themes dir to show up. If you previously installed this as a Marketplace
+extension, you can uninstall it from **Settings → Marketplace → Installed**.
+
+## Color schema
+
+Nimbalyst v0.58.x's `ThemeLoader` accepts these 20 keys; anything else is
+warned and ignored:
+
+```
+bg, bg-secondary, bg-tertiary, bg-hover, bg-selected, bg-active,
+text, text-muted, text-faint, text-disabled,
+border, border-focus,
+primary, primary-hover,
+link, link-hover,
+success, warning, error, info
 ```
 
 ## Credits
